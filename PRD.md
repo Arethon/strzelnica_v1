@@ -1,6 +1,6 @@
 # PRD: Platforma rezerwacji osi strzeleckich
 
-**Status:** v1 zaimplementowane i zweryfikowane end-to-end (patrz [Arethon/Strzelnica_widget#1](https://github.com/Arethon/Strzelnica_widget/issues/1))
+**Status:** v1 w budowie — wymagania przeniesione z wcześniejszego, niezależnego projektu (`Arethon/Strzelnica_widget`); implementacja w tym repo (`strzelnica_v1`) pisana od zera, bez migracji kodu z tamtego projektu (patrz [CONTEXT.md](./CONTEXT.md) i [docs/adr/](./docs/adr/) dla decyzji podjętych w tym repo).
 **Ostatnia aktualizacja:** 2026-09-01
 
 ## 1. Kontekst i problem
@@ -109,7 +109,8 @@ W kolejności malejącego prawdopodobieństwa realizacji jako następny krok:
 
 ## 9. Odniesienia
 
-- Pełna specyfikacja techniczna (user stories, decyzje implementacyjne, decyzje testowe): [Arethon/Strzelnica_widget#1](https://github.com/Arethon/Strzelnica_widget/issues/1)
+- **Uwaga:** [Arethon/Strzelnica_widget#1](https://github.com/Arethon/Strzelnica_widget/issues/1) to specyfikacja **wcześniejszego, osobnego projektu** o tych samych wymaganiach produktowych. Ten dokument (PRD dla `strzelnica_v1`) jest z nim spójny wymaganiowo, ale nieaktualny jako źródło decyzji implementacyjnych dla tego repo — implementacja tutaj powstaje od zera, bez odwoływania się do tamtego kodu.
+- Słownik domenowy tego repo: [CONTEXT.md](./CONTEXT.md)
+- Decyzje architektoniczne podjęte w tym repo: [docs/adr/](./docs/adr/)
 - Schemat bazy danych: `supabase/schema.sql`
 - Szablon onboardingu nowej strzelnicy: `supabase/seed.example.sql`
-- Konfiguracja skilli agentowych (tracker, etykiety, domain docs): `docs/agents/`
